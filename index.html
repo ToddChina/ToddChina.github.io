@@ -2,36 +2,458 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css">
+	<title>IPad</title>
+	<style>
 		*{
-			margin:0px;
-			padding:0px;
-		}
-		.abs{
-			position: absolute;
-			left:50%;
-			width:100px;
-			height:100px;
-			background-color: red;
-		}
-		.top{
-			height:200px;
-			background-color: yellow;
-		}
-		.box{
-			width:960px;
-			margin: 0 auto;
-			height:200px;
-			border: 1px solid red;
-		}
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	height: 730px;
+	margin:0 auto;
+}
+#container{
+	height: 345px;
+	margin: 0 auto;
+	padding-left: 230px;
+	background-image: url(../images/container-bg.gif);
+}
+#footer{
+	height: 90px;
+	margin: 0 auto;
+	background-image: url(../images/footer-bg.gif);
+}
+#top{
+	height: 80px;
+	margin: 0 auto;
+}
+.logo{
+	height: 80px;
+	width: 179px;
+	margin-left: 220px;
+	background-color: #db373b;
+	float: left;
+}
+.logo p{
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	line-height: 80px;
+	font-family: chunkfive;
+}
+@font-face{
+	font-family: chunkfive;
+	src: url(Chunkfive.otf);
+}
+#header>ul{
+	margin-left: 42px;
+}
+.bar{
+	height: 40px;
+	list-style: none;
+	float: left;
+	font-size: 18px;
+	margin-left: 42px;
+	line-height: 80px;
+}
+.bar a{
+	color: #000;
+	font-family: Helvetical,arial;
+}
+.bar a:link{
+	text-decoration:none;
+}
+.bar a:hover{
+	border-bottom: 3px solid #000;
+}
+#banner{
+	height: 583px;
+	width: 1100px;
+	margin: 0 auto;
+}
+.banner-left{
+	width: 28px;
+	height: 48px;
+	margin-top: 210px;
+	float: left;
+	cursor: pointer;
+}
+.banner-right{
+	width: 28px;
+	height: 48px;
+	float: right;
+	margin-top: 210px;
+	cursor: pointer;
+}
+.banner-center{
+	float: left;
+}
+.banner-title{
+	margin-top: 62px;
+}
+.banner-title p{
+	font-size: 48px;
+	font-family: chunkfive;
+	margin-left: 54px;
+}
+.banner-p{
+	font-size: 18px;
+	font-family: DroidSerif;
+	margin-left: 54px;
+	margin-top: 34px;
+	line-height: 30px;
+}
+.banner-img{
+	margin-left: 53px;
+	margin-top: 80px;
+}
+.banner-box{
+	height: 485px;
+	width: 358px;
+	float: left;
+	margin-top: 27px;
+}
+.banner-bottom{
+	margin-bottom: 0px;
+	height: 15px;
+	width: 115px;
+	margin-left: 461px;
+}
+.clear{
+	clear: both;
+}
+.banner-list{
+	height: 8px;
+	width: 8px;
+	list-style: none;
+	border:2px solid #eee;
+	border-radius: 16px;
+	float: left;
+	margin-top: 53px;
+	margin-left: 11px;
+}
+#container{
+	padding-top: 45px;
+}
+#container-inner{
+	width: 570px;
+	float: left;
+}
+.our-company{
+	color: #fff;
+	font-family: chunkfive;
+	font-size:24px;
+}
+@font-face{
+	font-family: DroidSerif;
+	src: url(DroidSerif-Italic.ttf);
+}
+.container-p{
+	font-size: 16px;
+	color: #dadada;
+	list-style: none;
+	font-family: DroidSerif;
+	line-height: 20px;
+	margin-top: 20px;
+}
+#container-inner ul{
+	padding-top: 10px;
+}
+#container-right{
+	width: 400px;
+	float: left;
+}
+.blog{
+	color: #fff;
+	font-family: chunkfive;
+	font-size:24px;
+}
+.aug{
+	width: 50px;
+	height: 40px;
+	border-radius: 30px;
+	background-color: #333;
+	font-family: DroidSerif;
+	list-style: none;
+	color: #dadada;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.list-1{
+	padding-top: 10px;
+	width: 50px;
+	float: left;
+}
+.list-2{
+	float: left;
+
+}
+.app{
+	font-size: 14px;
+	font-family: DroidSerif;
+	color: #666;
+	list-style: none;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+.app span{
+	color: #fff;
+}
+.footer-left{
+	width: 300px;
+	float: left;
+}
+.left{
+	font-size: 14px;
+	font-family: arial;
+	line-height: 90px;
+	color: #fff;
+	width: 300px;
+	margin-left: 230px;
+	list-style: none;
+	float: left;
+}
+.footer-list{
+	float: left;
+	list-style: none;
+	line-height: 90px;
+	margin-left: 16px;
+}
+.footer-right{
+	margin-left: 330px;
+	float: left;
+}
+.footer-list a{
+	font-size: 14px;
+	font-family: arial;
+	color: #fff;
+}
+.footer-list a:link{
+	text-decoration:none;
+}
+.home-list,.app-list,.products-list,.contact-list{
+	list-style: none;
+	color: #000;
+	font-family: arial;
+	line-height: 50px;
+	background-color: #eee;
+	padding-left: 3px;
+	padding-top: -3px;
+	border-radius: 3px;
+	margin-top:1px; 
+}
+.bar-1{
+	display: none;
+	position: absolute;
+	left: 443px;
+	top: 60px;
+}
+.bar-2{
+	display: none;
+	position: absolute;
+	left: 530px;
+	top: 60px;
+}
+.bar-3{
+	display: none;
+	position: absolute;
+	left: 695px;
+	top: 60px;
+}
+.bar-4{
+	display: none;
+	position: absolute;
+	left: 810px;
+	top: 60px;	
+}
+
 	</style>
 </head>
 <body>
-	<div class="abs"></div>
-	<div class="top">
-		<div class="box"></div>
+	<div id="header">
+		<div id="top">
+			<div class="logo">
+				<p>iPad App</p>
+			</div>
+			<ul>
+				<li class="bar">
+					<a href="#" class="home">Home</a>
+					<ul class="bar-1">
+						<li class="home-list">
+							<a href="#">1234</a>
+						</li>
+						<li class="home-list">
+							<a href="#">2345</a>
+						</li>
+						<li class="home-list">
+							<a href="#">3456</a>
+						</li>
+						<li class="home-list">
+							<a href="#">4567</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">About iPad App</a>
+					<ul class="bar-2">
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">Products</a>
+					<ul class="bar-3">
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">Contact</a>
+					<ul class="bar-4">
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<div class="banner-left">
+				<img src="images/left-arrow.jpg" alt="left-arrow">
+			</div>
+			<div class="banner-center">
+				<div class="banner-title">
+					<p>It’s an iPad App.</p>
+				</div>
+				<div class="banner-p">
+					<p>
+						All of the built-in apps on iPad were designed from the ground up <br>to take advantage of the large Multi-Touch screen and advanced <br>capabilities of iPad. And they work in any orientation. So you can do <br>things with these apps that you can’t do on any other device.
+					</p>
+				</div>
+				<div class="banner-img">
+					<img src="images/banner-img.jpg" alt="banner-img">
+				</div>
+			</div>
+			<div class="banner-box">
+				<img src="images/ipad.png" alt="ipad">
+			</div>
+			<div class="banner-right">
+				<img src="images/right-arrow.jpg" alt="left-arrow">
+			</div>
+			<div class="banner-bottom">
+				<ul>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="container-inner">
+			<h4 class="our-company">
+				Our Company
+			</h4>
+			<ul>
+				<li class="container-p">
+					Lift is a user experience design company with one goal: Making your <br>customers love you.
+				</li>
+				<li class="container-p">
+					We are a small team of creative engineers who specialize in building <br>brands, websites and applications that are beautifully simple. Our team <br>is experienced in the full design and development process. Check out <br>some of our work below and contact us to learn more or provide us with <br>specific detail on your upcoming project.
+				</li>
+			</ul>
+
+		</div>
+		<div id="container-right">
+			<h4 class="blog">
+				From The Blog
+			</h4>
+			<ul class="list-1">
+				<li class="aug"><span>AUG<br>17</span></li>
+				<li class="aug"><span>AUG<br>17</span></li>
+				<li class="aug"><span>AUG<br>17</span></li>
+			</ul>
+			<ul class="list-2">
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+			</ul>
+		</div>
 	</div>
 
+	<div id="footer">
+		<div class="2010ipad">
+			<ul class="footer-left">
+				<li class="left">
+					© 2010 iPad App All Rights Reserved
+				</li>
+			</ul>
+			<ul class="footer-right">
+				<li class="footer-list">
+					<a href="#">Home</a>
+				</li>
+				<li class="footer-list">
+					<a href="#">About iPad App</a>
+				</li>
+				<li class="footer-list">
+					<a href="#">Products</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Contact</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Terms&Conditions</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Sitemap</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(".bar").mouseenter(function(){
+			$(this).find("ul").stop().slideDown(500)
+		}).mouseleave(function(){
+			$(this).find("ul").stop().slideUp(500)
+		})
+
+
+	</script>
 </body>
 </html>
