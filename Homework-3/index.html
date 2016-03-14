@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IPad</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="header">
+		<div id="top">
+			<div class="logo">
+				<p>iPad App</p>
+			</div>
+			<ul>
+				<li class="bar">
+					<a href="#" class="home">Home</a>
+					<ul class="bar-1">
+						<li class="home-list">
+							<a href="#">1234</a>
+						</li>
+						<li class="home-list">
+							<a href="#">2345</a>
+						</li>
+						<li class="home-list">
+							<a href="#">3456</a>
+						</li>
+						<li class="home-list">
+							<a href="#">4567</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">About iPad App</a>
+					<ul class="bar-2">
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+						<li class="app-list">
+							<a href="#">About iPad App</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">Products</a>
+					<ul class="bar-3">
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+						<li class="products-list">
+							<a href="#">Products</a>
+						</li>
+					</ul>
+				</li>
+				<li class="bar">
+					<a href="#" class="home">Contact</a>
+					<ul class="bar-4">
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+						<li class="contact-list">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<div class="banner-left">
+				<img src="images/left-arrow.jpg" alt="left-arrow">
+			</div>
+			<div class="banner-center">
+				<div class="banner-title">
+					<p>It’s an iPad App.</p>
+				</div>
+				<div class="banner-p">
+					<p>
+						All of the built-in apps on iPad were designed from the ground up <br>to take advantage of the large Multi-Touch screen and advanced <br>capabilities of iPad. And they work in any orientation. So you can do <br>things with these apps that you can’t do on any other device.
+					</p>
+				</div>
+				<div class="banner-img">
+					<img src="images/banner-img.jpg" alt="banner-img">
+				</div>
+			</div>
+			<div class="banner-box">
+				<img src="images/ipad.png" alt="ipad">
+			</div>
+			<div class="banner-right">
+				<img src="images/right-arrow.jpg" alt="left-arrow">
+			</div>
+			<div class="banner-bottom">
+				<ul>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+					<li class="banner-list"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="container-inner">
+			<h4 class="our-company">
+				Our Company
+			</h4>
+			<ul>
+				<li class="container-p">
+					Lift is a user experience design company with one goal: Making your <br>customers love you.
+				</li>
+				<li class="container-p">
+					We are a small team of creative engineers who specialize in building <br>brands, websites and applications that are beautifully simple. Our team <br>is experienced in the full design and development process. Check out <br>some of our work below and contact us to learn more or provide us with <br>specific detail on your upcoming project.
+				</li>
+			</ul>
+
+		</div>
+		<div id="container-right">
+			<h4 class="blog">
+				From The Blog
+			</h4>
+			<ul class="list-1">
+				<li class="aug"><span>AUG<br>17</span></li>
+				<li class="aug"><span>AUG<br>17</span></li>
+				<li class="aug"><span>AUG<br>17</span></li>
+			</ul>
+			<ul class="list-2">
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+				<li class="app">Why you should buy this app<br><span>by:Brad Miller</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="2010ipad">
+			<ul class="footer-left">
+				<li class="left">
+					© 2010 iPad App All Rights Reserved
+				</li>
+			</ul>
+			<ul class="footer-right">
+				<li class="footer-list">
+					<a href="#">Home</a>
+				</li>
+				<li class="footer-list">
+					<a href="#">About iPad App</a>
+				</li>
+				<li class="footer-list">
+					<a href="#">Products</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Contact</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Terms&Conditions</a>
+				</li>
+				<li class="footer-list">
+					<a href="">Sitemap</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(".bar").mouseenter(function(){
+			$(this).find("ul").stop().slideDown(500)
+		}).mouseleave(function(){
+			$(this).find("ul").stop().slideUp(500)
+		})
+
+
+	</script>
+</body>
+</html>
