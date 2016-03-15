@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	height: 100%;
+}
+body
+{
+	background: #393e42;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+}
+#page{
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+}
+#header{
+	width: 300px;
+	height: 700px;
+	background-color: #343536;
+	padding-top: 50px;
+	float: left;
+}
+#container{
+	width: 899px;
+	height: 800px;
+	background-color: #3d3e42;
+	float: left;
+	border-right: 1px solid #fff;
+}
+.logo{
+	width: 120px;
+	height: 180px;
+	margin: 0 auto;
+}
+.logo>img{
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+	overflow: hidden;
+}
+.logo>h2{
+	font-family: arial;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+#bar-list>li{
+	width: 200px;
+	height: 80px;
+	list-style: none;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-position: 60px center;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	line-height: 80px;
+	padding-left: 100px;
+	cursor: pointer;
+}
+#bar-list{
+	float: right;
+}
+#bar-list>li:hover{
+	background-color: #b69e40;
+}
+.bar1{
+	background-image: url(../images/home.png);
+}
+.bar2{
+	background-image: url(../images/work.png);
+}
+.bar3{
+	background-image: url(../images/aboutme.png);
+}
+.bar4{
+	background-image: url(../images/careers.png);
+}
+.bar5{
+	background-image: url(../images/contactme.png);
+}
+.homework{
+	list-style-type: none;
+}
+#homeworklist-20160315{
+	width: 200px;
+	height: 100px;
+	color: #fff;
+	font-family: arial;
+	margin: 50px auto;
+	text-align: center;
+}
+.homework{
+	width: 200px;
+	text-align: center;
+}
