@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义动画</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.big-box{
+			height: 200px;
+			width: 800px;
+		}
+		.box1{
+			height: 200px;
+			width: 200px;
+			background-color: #f00;
+			float: left;
+		}
+		.box2{
+			height: 200px;
+			width: 200px;			
+			background-color: #0f0;
+			float: left;
+		}
+		.box3{
+			height: 200px;
+			width: 200px;
+			background-color: #00f;
+			float: left;
+		}
+		.box4{
+			height: 200px;
+			width: 200px;
+			background-color: #ff0;
+			float: left;
+		}
+		.box{
+			float: left;
+		}
+		.view{
+			height: 200px;
+			width: 200px;
+			overflow: hidden;
+		}
+		.btn{
+			height: 20px;
+			width: 20px;
+			border: 1px solid #000;
+			float: left;
+		}
+		img{
+			height: 200px;
+			width: 200px;
+			float: left;
+		}
+		.color{
+			background-color: #ff0;
+		}
+		.btn{
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div class="big-box">
+			<img src="images/1.jpg" class=""alt="">
+			<img src="images/2.jpg" class=""alt="">
+			<img src="images/3.jpg" class=""alt="">
+			<img src="images/4.jpg" class=""alt="">
+		</div>
+	</div>
+	<ul>
+		<li class="btn">1</li>
+		<li class="btn">2</li>
+		<li class="btn">3</li>
+		<li class="btn">4</li>
+	</ul>
+
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+
+		$(".btn").mouseenter(function(){
+			var index = $(this).index()
+			var moveleft = index * -200
+			$(".big-box").animate({"margin-left": moveleft},300)
+			$(this).css("background-color","#f00");
+			$(this).siblings().css("background-color","#fff");
+		})
+
+	</script>
+</body>
+</html>

@@ -88,6 +88,9 @@ body
 .homework{
 	list-style-type: none;
 }
+.work a{
+	color: #b69e40;
+}
 #homeworklist-20160315{
 	width: 200px;
 	height: 100px;
@@ -98,5 +101,21 @@ body
 }
 .homework{
 	width: 200px;
+	text-align: center;
+}
+#homeworklist-20160315-js{
+	width: 200px;
+	height: 30px;
+	color: #fff;
+	font-family: arial;
+	margin: 50px auto;
+	text-align: center;
+}
+#homeorklist-20160316{
+	width: 200px;
+	height: 100px;
+	color: #fff;
+	font-family: arial;
+	margin: 50px auto;
 	text-align: center;
 }
