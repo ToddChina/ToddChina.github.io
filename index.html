@@ -15,11 +15,51 @@
 			</div>
 			<div class="bar">
 				<ul id="bar-list">
-					<li class="bar1">HomePage</li>
-					<li class="bar2">Work</li>
-					<li class="bar3">About Me</li>
-					<li class="bar4">Careers</li>
-					<li class="bar5">Contact Me</li>
+					<li class="nav">
+						<div class="bar1 list">
+							<a href="#">
+								<img src="images/home.png" alt="">
+								<span>HomePage</span>
+							</a>
+						</div>
+						<div class="bg-roll"></div>
+					</li>
+					<li class="nav">
+						<div class="bar2 list">
+							<a href="#">
+								<img src="images/work.png" alt="">
+								<span>Work</span>
+							</a>
+						</div>
+						<div class="bg-roll"></div>
+					</li>
+					<li class="nav">
+						<div class="bar3 list">
+							<a href="#">
+								<img src="images/aboutme.png" alt="">
+								<span>About Me</span>
+							</a>
+						</div>
+						<div class="bg-roll"></div>
+					</li>
+					<li class="nav">
+						<div class="bar4 list">
+							<a href="#">
+								<img src="images/careers.png" alt="">
+								<span>Careers</span>
+							</a>
+						</div>
+						<div class="bg-roll"></div>
+					</li>
+					<li class="nav">
+						<div class="bar5 list">
+							<a href="#">
+								<img src="images/contactme.png" alt="">
+								<span>Contact Me</span>
+							</a>
+						</div>
+						<div class="bg-roll"></div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -46,11 +86,28 @@
 					<li class="homework"><a href="homework-js-1/index.html">homework-js</a></li>
 				</ul>
 				<ul id="homeorklist-20160316">20160316-homework
-					<li class="homework"><a href="Homework-20150316/20160316-backgroundroll.html">20160316-backgroundroll</a></li>
+					<li class="homework"><a href="Homework-20160316/20160316-backgroundroll.html">20160316-backgroundroll</a></li>
 					<li class="homework"><a href="Homework-20150316/20160316-imgroll.html">20160316-imgroll</a></li>
+				</ul>
+				<ul id="homeworklist-20160317">20160317-homework
+					<li class="homework"></li>
+					<li class="homework"></li>
+					<li class="homework"></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(".nav").mouseenter(function(){
+			console.log(123)
+			$(this).children(".bg-roll").stop().animate({"margin-left":-300},300)	
+		})
+		$(".nav").mouseleave(function(){
+			$(this).children(".bg-roll").stop().animate({"margin-left":0},300)	
+		})
+	</script>
 </body>
 </html>

@@ -50,40 +50,52 @@ body
 	margin-top: 20px;
 }
 #bar-list>li{
-	width: 200px;
+	width: 600px;
 	height: 80px;
 	list-style: none;
 	font-family: arial;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
-	background-position: 60px center;
-	background-repeat: no-repeat;
-	margin-top: 20px;
 	line-height: 80px;
-	padding-left: 100px;
-	cursor: pointer;
 }
 #bar-list{
+	height: 900px;
+	width: 300px;
+	background-color: #343536;
+	overflow: hidden;
 	float: right;
 }
-#bar-list>li:hover{
+.bg-roll{
+	width: 300px;
+	height: 80px;
 	background-color: #b69e40;
 }
-.bar1{
-	background-image: url(../images/home.png);
+.list{
+	height: 80px;
+	width: 300px;
+	float: left;
 }
-.bar2{
-	background-image: url(../images/work.png);
+.nav div{
+	float: left;
 }
-.bar3{
-	background-image: url(../images/aboutme.png);
+#bar-list a{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
 }
-.bar4{
-	background-image: url(../images/careers.png);
+.list a{
+	width: 300px;
+	display: block;
 }
-.bar5{
-	background-image: url(../images/contactme.png);
+.list>a>img{
+	position: relative;
+	top: 6px;
+	left: 70px;
+}
+.list>a>span{
+	margin-left: 80px;
 }
 .homework{
 	list-style-type: none;
