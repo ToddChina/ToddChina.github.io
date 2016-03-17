@@ -101,33 +101,39 @@ body
 	list-style-type: none;
 }
 .work a{
-	color: #b69e40;
+	color: #0086cc;
 }
-#homeworklist-20160315{
-	width: 200px;
+.work div{
 	height: 100px;
+	margin-top: 20px;
+	color: #b69e40;
+	font-family: impact,arial;
+	font-size: 35px;
+	text-align:center;
+}
+.homeworklist{
+	width: 200px;
+	height: 250px;
 	color: #fff;
-	font-family: arial;
-	margin: 50px auto;
+	font-family: impact,arial;
 	text-align: center;
+	border: 2px #fff solid;
+	border-color: #b69e40;
+	margin-top: 20px;
+	margin-left: 15px;
+	float: left;
 }
 .homework{
 	width: 200px;
 	text-align: center;
 }
-#homeworklist-20160315-js{
-	width: 200px;
-	height: 30px;
-	color: #fff;
-	font-family: arial;
-	margin: 50px auto;
-	text-align: center;
+.homework-h5{
+	background-image: url(../images/html5.png);
+	background-size:cover;
 }
-#homeorklist-20160316{
-	width: 200px;
-	height: 100px;
-	color: #fff;
-	font-family: arial;
-	margin: 50px auto;
-	text-align: center;
+.homework-js{
+	background-image: url(../images/js.png);
+	background-size:cover;
+	background-position: 15px 2px;
+	background-repeat: no-repeat;
 }
