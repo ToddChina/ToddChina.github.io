@@ -69,61 +69,109 @@
 					<span>My Work In DigitaiCity</span>
 					<img src="photos/DigitaiCtiy-logo.gif" alt="DigitaiCtiy">
 				</div>
-				<ul class="homeworklist homework-h5"><span>20160315-homework</span>
-					<li class="homework">
-						<a href="Homework-1/index.html">Homework-1</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-2/index.html">Homework-2</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-3/index.html">Homework-3</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-4/index.html">Homework-4</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-5/index.html">Homework-5</a>
-					</li>
-				</ul>
-				<ul class="homeworklist homework-js"><span>20160315-homework-js</span>
-					<li class="homework">
-						<a href="Homework-js-1/index.html">homework-js</a>
-					</li>
-				</ul>
-				<ul class="homeworklist homework-js"><span>20160316-homework</span>
-					<li class="homework">
-						<a href="Homework-20160316/20160316-backgroundroll.html">20160316-backgroundroll</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-20160316/20160316-imgroll.html">20160316-imgroll</a>
-					</li>
-				</ul>
-				<ul class="homeworklist homework-js"><span>20160317-homework</span>
-					<li class="homework">
-						<a href="Homework-20160317/20160316-tip.html">20160316-tip</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-20160317/20160317-addElement.html">20160306-addElement</a>
-					</li>
-					<li class="homework">
-						<a href="Homework-20160317/20160316-zoom.html">20160306-zoom</a>
-					</li>
-				</ul>
+				<section id="gallery-wrapper">
+					<article class="white-panel">
+						<img src="photos/jquery-logo.jpg" class="thumb">
+						<h1><a href="#">瀑布流插件演示</a></h1>
+				  		<p>使用瀑布流插件展示作业</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework1.png" class="thumb">
+						<h1><a href="Homework-1/index.html">homework1</a></h1>
+				  		<p>页面1</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework2.png" class="thumb">
+						<h1><a href="Homework-2/index.html">homework2</a></h1>
+				  		<p>页面2</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework3.png" class="thumb">
+						<h1><a href="Homework-3/index.html">homework3</a></h1>
+				  		<p>页面3</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework4.jpg" class="thumb">
+						<h1><a href="Homework-4/index.html">homework4</a></h1>
+				  		<p>页面4</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework5.png" class="thumb">
+						<h1><a href="Homework-5/index.html">homework5</a></h1>
+				  		<p>页面5</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/homework-slidedown.png" class="thumb">
+						<h1><a href="Homework-js-1/index.html">homework-slidedown</a></h1>
+				  		<p>下拉菜单</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/js.png" class="thumb">
+						<h1><a href="Homework-20160316/20160316-backgroundroll.html">backgroundroll</a></h1>
+				  		<p>背景滚动</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/js.png" class="thumb">
+						<h1><a href="Homework-20160316/20160316-imgroll.html">imgroll</a></h1>
+				  		<p>图片滚动</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/js-imgroll.png" class="thumb">
+						<h1><a href="Homework-20160317/20160316-tip.html">tip</a></h1>
+				  		<p>选项卡</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/portfolio-6.png" class="thumb">
+						<h1><a href="Homework-20160317/20160317-addElement.html">addElement</a></h1>
+				  		<p>添加元素</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/portfolio-7.png" class="thumb">
+						<h1><a href="Homework-20160317/20160316-zoom.html">zoom</a></h1>
+				  		<p>图片放大</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/portfolio-8.png" class="thumb">
+						<h1><a href="#">Updating</a></h1>
+				  		<p>Description 13</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/portfolio-2.png" class="thumb">
+						<h1><a href="#">Updating</a></h1>
+				  		<p>Description 14</p>
+					</article>
+					<article class="white-panel">
+						<img src="photos/portfolio-3.png" class="thumb">
+						<h1><a href="#">Updating</a></h1>
+				  		<p>Description 15</p>
+					</article>
+		    	</section>
 			</div>
 		</div>
 	</div>
 
 
 	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/pinterest_grid.js"></script>
 	<script type="text/javascript">
 		$(".nav").mouseenter(function(){
 			console.log(123)
 			$(this).children(".bg-roll").stop().animate({"margin-left":-300},300)	
-		})
+		});
 		$(".nav").mouseleave(function(){
 			$(this).children(".bg-roll").stop().animate({"margin-left":0},300)	
-		})
+		});
+		$(function(){
+			$("#gallery-wrapper").pinterest_grid({
+				no_columns: 3,
+                padding_x: 30,
+                padding_y: 10,
+                margin_bottom: 50,
+                single_column_breakpoint: 700
+			});
+			
+		});
 	</script>
 </body>
 </html>
